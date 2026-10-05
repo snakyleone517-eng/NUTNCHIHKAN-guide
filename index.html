@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>2026 赤嵌萬神節｜萬神導覽</title>
+  <meta
+    name="description"
+    content="2026 赤嵌萬神節—萬神導覽，五場府城文化走讀活動。"
+  />
+
+  <style>
+    /* =========================
+       基礎設定
+    ========================== */
+    :root {
+      --orange: #f47a31;
+      --orange-light: #ffac5c;
+      --yellow: #f8cf68;
+      --red: #b52e37;
+      --red-dark: #81242c;
+      --blue: #394c59;
+      --cream: #fff8e9;
+      --paper: #fffdf7;
+      --text: #332923;
+      --muted: #74665e;
+      --border: rgba(98, 64, 43, 0.13);
+      --shadow: 0 12px 35px rgba(93, 49, 27, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        "Noto Sans TC",
+        "PingFang TC",
+        "Microsoft JhengHei",
+        sans-serif;
+
+      color: var(--text);
+      background:
+        radial-gradient(
+          circle at 15% 8%,
+          rgba(255, 222, 139, 0.42),
+          transparent 26%
+        ),
+        #f8f0df;
+
+      line-height: 1.7;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* =========================
+       Hero
+    ========================== */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 80px 0 72px;
+      color: #fff;
+
+      background:
+        radial-gradient(
+          circle at 50% 120%,
+          rgba(255, 210, 122, 0.7),
+          transparent 43%
+        ),
+        linear-gradient(
+          135deg,
+          #e5572e 0%,
+          #f47a31 48%,
+          #f69b49 100%
+        );
+    }
+
+    .hero::before,
+    .hero::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255, 241, 194, 0.22);
+      border-radius: 50%;
+    }
+
+    .hero::before {
+      width: 520px;
+      height: 520px;
+      top: -310px;
+      right: -100px;
+    }
+
+    .hero::after {
+      width: 380px;
+      height: 380px;
+      left: -190px;
+      bottom: -210px;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 18px;
+      padding: 7px 15px;
+
+      font-size: 14px;
+      letter-spacing: 0.12em;
+      font-weight: 700;
+
+      color: #fff8df;
+      border: 1px solid rgba(255, 255, 255, 0.42);
+      border-radius: 999px;
+      background: rgba(108, 42, 28, 0.12);
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      font-family:
+        "Noto Serif TC",
+        "Songti TC",
+        "PMingLiU",
+        serif;
+
+      font-size: clamp(42px, 7vw, 78px);
+      line-height: 1.15;
+      letter-spacing: 0.06em;
+
+      text-shadow: 0 5px 22px rgba(94, 39, 24, 0.2);
+    }
+
+    .hero h1 span {
+      display: block;
+      margin-top: 8px;
+
+      font-family:
+        "Noto Sans TC",
+        sans-serif;
+
+      font-size: clamp(21px, 3vw, 32px);
+      letter-spacing: 0.15em;
+      font-weight: 500;
+    }
+
+    .hero-description {
+      max-width: 700px;
+      margin: 25px 0 0;
+
+      color: rgba(255, 255, 255, 0.94);
+      font-size: 17px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 30px;
+    }
+
+    .hero-tag {
+      padding: 8px 14px;
+
+      font-size: 14px;
+      font-weight: 600;
+
+      color: #633429;
+      background: #ffe3a2;
+      border-radius: 6px;
+    }
+
+    /* =========================
+       活動資訊
+    ========================== */
+
+    main {
+      padding-bottom: 80px;
+    }
+
+    .info-panel {
+      position: relative;
+      margin-top: -30px;
+      z-index: 2;
+
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow: hidden;
+
+      background: var(--paper);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .info-item {
+      padding: 23px 25px;
+      border-right: 1px solid var(--border);
+    }
+
+    .info-item:last-child {
+      border-right: none;
+    }
+
+    .info-label {
+      margin-bottom: 5px;
+
+      color: var(--red);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.09em;
+    }
+
+    .info-value {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    /* =========================
+       Section
+    ========================== */
+
+    .section {
+      padding-top: 72px;
+    }
+
+    .section-heading {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .section-label {
+      color: var(--red);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 0.18em;
+    }
+
+    .section-heading h2 {
+      margin: 7px 0 8px;
+
+      font-family:
+        "Noto Serif TC",
+        "Songti TC",
+        serif;
+
+      font-size: clamp(28px, 4vw, 38px);
+    }
+
+    .section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    /* =========================
+       場次卡片
+    ========================== */
+
+    .event-list {
+      display: grid;
+      gap: 22px;
+    }
+
+    .event-card {
+      display: grid;
+      grid-template-columns: 150px 1fr auto;
+      gap: 30px;
+      align-items: center;
+
+      padding: 28px 30px;
+
+      background: var(--paper);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: 0 6px 25px rgba(93, 49, 27, 0.055);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+    .event-card:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow);
+    }
+
+    .event-date {
+      padding-right: 26px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+
+    .date-month {
+      color: var(--red);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+    }
+
+    .date-day {
+      margin: -4px 0;
+
+      color: var(--red-dark);
+      font-family: Georgia, serif;
+      font-size: 48px;
+      line-height: 1.1;
+      font-weight: 700;
+    }
+
+    .date-time {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .session-tag {
+      display: inline-block;
+      margin-bottom: 5px;
+
+      color: var(--orange);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+    }
+
+    .event-content h3 {
+      margin: 0 0 13px;
+
+      font-family:
+        "Noto Serif TC",
+        "Songti TC",
+        serif;
+
+      font-size: 23px;
+      line-height: 1.45;
+    }
+
+    .detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px 25px;
+
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .detail {
+      margin: 0;
+    }
+
+    .detail strong {
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .route {
+      grid-column: 1 / -1;
+    }
+
+    .signup-area {
+      min-width: 160px;
+      text-align: center;
+    }
+
+    .deadline {
+      margin-bottom: 9px;
+
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.45;
+    }
+
+    .deadline strong {
+      display: block;
+      color: var(--red);
+      font-size: 13px;
+    }
+
+    .signup-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+
+      width: 100%;
+      padding: 12px 20px;
+
+      color: #fff;
+      font-weight: 800;
+      font-size: 15px;
+      text-decoration: none;
+
+      background: var(--red);
+      border-radius: 8px;
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .signup-button:hover {
+      background: var(--red-dark);
+      transform: translateY(-1px);
+    }
+
+    .signup-button::after {
+      content: "↗";
+      font-size: 16px;
+    }
+
+    /* =========================
+       注意事項
+    ========================== */
+
+    .notice {
+      display: grid;
+      grid-template-columns: 56px 1fr;
+      gap: 18px;
+
+      margin-top: 55px;
+      padding: 27px 30px;
+
+      background: #fff1cb;
+      border-radius: 16px;
+      border: 1px solid rgba(201, 148, 54, 0.25);
+    }
+
+    .notice-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 50px;
+      height: 50px;
+
+      color: #fff;
+      font-weight: 900;
+
+      background: var(--orange);
+      border-radius: 50%;
+    }
+
+    .notice h3 {
+      margin: 0 0 5px;
+      font-size: 17px;
+    }
+
+    .notice p {
+      margin: 0;
+      color: #735f45;
+      font-size: 14px;
+    }
+
+    /* =========================
+       Footer
+    ========================== */
+
+    footer {
+      padding: 35px 20px;
+
+      color: rgba(255, 255, 255, 0.77);
+      text-align: center;
+      font-size: 13px;
+
+      background: #423934;
+    }
+
+    footer strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #fff;
+      font-size: 15px;
+    }
+
+    /* =========================
+       手機版
+    ========================== */
+
+    @media (max-width: 850px) {
+      .info-panel {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .info-item:nth-child(2) {
+        border-right: 0;
+      }
+
+      .info-item:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--border);
+      }
+
+      .event-card {
+        grid-template-columns: 100px 1fr;
+      }
+
+      .signup-area {
+        grid-column: 1 / -1;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+
+      .signup-button {
+        width: auto;
+        min-width: 160px;
+      }
+
+      .deadline {
+        margin: 0;
+        text-align: right;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      .hero {
+        padding: 60px 0 65px;
+      }
+
+      .hero-description {
+        font-size: 15px;
+      }
+
+      .info-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .info-item {
+        border-right: 0;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .info-item:last-child {
+        border-bottom: 0;
+      }
+
+      .section {
+        padding-top: 55px;
+      }
+
+      .event-card {
+        display: block;
+        padding: 24px 22px;
+      }
+
+      .event-date {
+        display: flex;
+        align-items: baseline;
+        gap: 8px;
+
+        margin-bottom: 18px;
+        padding: 0 0 14px;
+        text-align: left;
+
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .date-day {
+        order: -1;
+        font-size: 36px;
+      }
+
+      .date-month {
+        font-size: 14px;
+      }
+
+      .date-time {
+        margin-left: auto;
+      }
+
+      .event-content h3 {
+        font-size: 20px;
+      }
+
+      .detail-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .route {
+        grid-column: auto;
+      }
+
+      .signup-area {
+        display: block;
+        margin-top: 20px;
+      }
+
+      .deadline {
+        margin-bottom: 10px;
+        text-align: left;
+      }
+
+      .signup-button {
+        width: 100%;
+      }
+
+      .notice {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================================
+       首頁主視覺
+  ========================================== -->
+  <header class="hero">
+    <div class="container hero-inner">
+
+      <div class="eyebrow">
+        2026 CHIHKAN FESTIVAL
+      </div>
+
+      <h1>
+        赤嵌萬神節
+        <span>萬 神 導 覽</span>
+      </h1>
+
+      <p class="hero-description">
+        走進古老街道、百年市場與廟宇空間，
+        從信仰、城市、文化與地方生活出發，
+        透過五場不同主題的走讀，重新認識我們生活的臺南。
+      </p>
+
+      <div class="hero-tags">
+        <span class="hero-tag">五場文化走讀</span>
+        <span class="hero-tag">免費參加</span>
+        <span class="hero-tag">臺南・赤嵌</span>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- =========================================
+         活動基本資訊
+    ========================================== -->
+    <div class="container">
+
+      <section class="info-panel">
+
+        <div class="info-item">
+          <div class="info-label">ACTIVITY</div>
+          <div class="info-value">2026 赤嵌萬神節—萬神導覽</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-label">DATE</div>
+          <div class="info-value">10.17 — 10.25</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-label">FEE</div>
+          <div class="info-value">免費參加</div>
+        </div>
+
+        <div class="info-item">
+          <div class="info-label">REGISTRATION</div>
+          <div class="info-value">各場次獨立報名</div>
+        </div>
+
+      </section>
+
+
+      <!-- =========================================
+           五場活動
+      ========================================== -->
+      <section class="section">
+
+        <div class="section-heading">
+          <div class="section-label">WALKING TOUR</div>
+          <h2>選擇你想參加的場次</h2>
+          <p>每場活動皆須分開報名，點擊按鈕即可前往南大活動報名系統。</p>
+        </div>
+
+
+        <div class="event-list">
+
+
+          <!-- 第一場 -->
+          <article class="event-card">
+
+            <div class="event-date">
+              <div class="date-month">OCT.</div>
+              <div class="date-day">17</div>
+              <div class="date-time">15:00–17:00</div>
+            </div>
+
+            <div class="event-content">
+
+              <span class="session-tag">第一場次</span>
+
+              <h3>
+                那些年、那些溪畔的諸神故事—第二部
+              </h3>
+
+              <div class="detail-grid">
+
+                <p class="detail">
+                  <strong>集合地點｜</strong>
+                  臺疆祖廟大觀音亭
+                </p>
+
+                <p class="detail">
+                  <strong>領路人｜</strong>
+                  楊清然
+                </p>
+
+                <p class="detail route">
+                  <strong>走讀路線｜</strong>
+                  大觀音亭 → 德慶溪舊河道 → 縣城隍廟
+                </p>
+
+              </div>
+            </div>
+
+            <div class="signup-area">
+
+              <div class="deadline">
+                報名截止
+                <strong>10/13（二）17:00</strong>
+              </div>
+
+              <a
+                class="signup-button"
+                href="https://campus.nutn.edu.tw/ActReg/ActInfo/15100/11509301607"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                前往報名
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- 第二場 -->
+          <article class="event-card">
+
+            <div class="event-date">
+              <div class="date-month">OCT.</div>
+              <div class="date-day">18</div>
+              <div class="date-time">10:30–12:00</div>
+            </div>
+
+            <div class="event-content">
+
+              <span class="session-tag">第二場次</span>
+
+              <h3>府城男神信仰</h3>
+
+              <div class="detail-grid">
+
+                <p class="detail">
+                  <strong>集合地點｜</strong>
+                  祀典興濟宮
+                </p>
+
+                <p class="detail">
+                  <strong>領路人｜</strong>
+                  蔡任盈
+                </p>
+
+                <p class="detail route">
+                  <strong>走讀路線｜</strong>
+                  興濟宮 → 鴨母寮 → 靈佑宮 → 武廟
+                </p>
+
+              </div>
+            </div>
+
+            <div class="signup-area">
+
+              <div class="deadline">
+                報名截止
+                <strong>10/13（二）17:00</strong>
+              </div>
+
+              <a
+                class="signup-button"
+                href="https://campus.nutn.edu.tw/ActReg/ActInfo/15100/11509301854"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                前往報名
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- 第三場 -->
+          <article class="event-card">
+
+            <div class="event-date">
+              <div class="date-month">OCT.</div>
+              <div class="date-day">18</div>
+              <div class="date-time">13:00–14:30</div>
+            </div>
+
+            <div class="event-content">
+
+              <span class="session-tag">第三場次</span>
+
+              <h3>府城男神信仰</h3>
+
+              <div class="detail-grid">
+
+                <p class="detail">
+                  <strong>集合地點｜</strong>
+                  祀典武廟
+                </p>
+
+                <p class="detail">
+                  <strong>領路人｜</strong>
+                  蔡任盈
+                </p>
+
+                <p class="detail route">
+                  <strong>走讀路線｜</strong>
+                  武廟 → 萬福庵 → 靈佑宮 → 興濟宮
+                </p>
+
+              </div>
+            </div>
+
+            <div class="signup-area">
+
+              <div class="deadline">
+                報名截止
+                <strong>10/13（二）17:00</strong>
+              </div>
+
+              <a
+                class="signup-button"
+                href="https://campus.nutn.edu.tw/ActReg/ActInfo/15100/11509302258"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                前往報名
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- 第四場 -->
+          <article class="event-card">
+
+            <div class="event-date">
+              <div class="date-month">OCT.</div>
+              <div class="date-day">24</div>
+              <div class="date-time">09:30–11:30</div>
+            </div>
+
+            <div class="event-content">
+
+              <span class="session-tag">第四場次</span>
+
+              <h3>
+                從大觀音亭的屋脊看 2026 赤嵌萬神節
+              </h3>
+
+              <div class="detail-grid">
+
+                <p class="detail">
+                  <strong>集合地點｜</strong>
+                  祀典興濟宮
+                </p>
+
+                <p class="detail">
+                  <strong>領路人｜</strong>
+                  陳宏斌
+                </p>
+
+                <p class="detail route">
+                  <strong>走讀路線｜</strong>
+                  興濟宮 → 大觀音亭 → 三老爺宮 → 開基龍君殿
+                </p>
+
+              </div>
+            </div>
+
+            <div class="signup-area">
+
+              <div class="deadline">
+                報名截止
+                <strong>10/20（二）17:00</strong>
+              </div>
+
+              <a
+                class="signup-button"
+                href="https://campus.nutn.edu.tw/ActReg/ActInfo/15100/11509303129"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                前往報名
+              </a>
+
+            </div>
+          </article>
+
+
+          <!-- 第五場 -->
+          <article class="event-card">
+
+            <div class="event-date">
+              <div class="date-month">OCT.</div>
+              <div class="date-day">25</div>
+              <div class="date-time">10:30–12:00</div>
+            </div>
+
+            <div class="event-content">
+
+              <span class="session-tag">第五場次</span>
+
+              <h3>府城男神信仰</h3>
+
+              <div class="detail-grid">
+
+                <p class="detail">
+                  <strong>集合地點｜</strong>
+                  祀典興濟宮
+                </p>
+
+                <p class="detail">
+                  <strong>領路人｜</strong>
+                  陳建良
+                </p>
+
+                <p class="detail route">
+                  <strong>走讀路線｜</strong>
+                  興濟宮 → 鴨母寮 → 靈佑宮 → 武廟
+                </p>
+
+              </div>
+            </div>
+
+            <div class="signup-area">
+
+              <div class="deadline">
+                報名截止
+                <strong>10/20（二）17:00</strong>
+              </div>
+
+              <a
+                class="signup-button"
+                href="https://campus.nutn.edu.tw/ActReg/ActInfo/15100/11509303406"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                前往報名
+              </a>
+
+            </div>
+          </article>
+
+        </div>
+
+
+        <!-- 注意事項 -->
+        <div class="notice">
+
+          <div class="notice-icon">!</div>
+
+          <div>
+            <h3>報名前請注意</h3>
+
+            <p>
+              五個場次皆為獨立報名，請依欲參加的日期進入對應活動頁面。
+              實際名額與報名狀態請以國立臺南大學活動報名系統顯示為準。
+            </p>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+
+  </main>
+
+
+  <footer>
+    <strong>2026 赤嵌萬神節 — 萬神導覽</strong>
+    國立臺南大學 × 赤嵌萬神節
+  </footer>
+
+</body>
+</html>
